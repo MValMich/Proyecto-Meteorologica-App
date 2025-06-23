@@ -1,0 +1,23 @@
+body{
+    background: linear-gradient(90deg, grey, white, grey);
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    display: flex;
+    justify-self: center;
+}
+form{
+/* border: solid; */
+display: flex;
+justify-content: center;
+}
+#containerTime{
+    /* border: solid; */
+    display: flex;
+justify-content: center;
+}
+img{
+    display: flex;
+    justify-self: center;
+}

@@ -1,1 +1,2 @@
 # Proyecto-Meteorologica-App
+Objeto: desarrollar una App Meteorologica (básica) que se suministra de los datos de otro servidor especializado en todo tipo de datos meteorológico (Aplicar los conceptos aprendidos sobre api/fetch).
