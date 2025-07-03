@@ -44,8 +44,8 @@ async function getWeather(city) {
     containerTime.innerHTML = `
       Ubicación interpretada: ${resolveAddress}<br><br>
       Fecha: ${dateTime}; <br> <br>
-      Máxima: ${tempMax} C°; <br> <br>
-      Mínima: ${tempMin} C°
+      Mínima: ${tempMin} C°<br> <br>
+      Máxima: ${tempMax} C°;
       `;
    
   } catch (error) {
