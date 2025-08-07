@@ -41,11 +41,11 @@ async function getWeather(city) {
       img.src = 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2F6dzlodDFnamdmMXppcW81Z2Y2cmJlb20weDlzd3FqOGwyMWo3MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nyRlegXqTlI8BIANBj/giphy.gif'; // neutro por defecto
     }
 
-    containerTime.innerHTML = `
-      Ubicación interpretada: ${resolveAddress}<br><br>
-      Fecha: ${dateTime}; <br> <br>
-      Mínima: ${tempMin} C°<br> <br>
-      Máxima: ${tempMax} C°;
+    containerTime.textContent = `
+      Ubicación interpretada: ${resolveAddress} / 
+      Mínima: ${tempMin} C° /
+      Máxima: ${tempMax} C° /
+      Fecha: ${dateTime} / 
       `;
    
   } catch (error) {
@@ -57,7 +57,7 @@ async function getWeather(city) {
 // Evento del botón
 btnGetWeather.addEventListener('click', (e) => {
   e.preventDefault();
-  const city = inpAddress.value.trim().replace(/[<>&"']/gi,'');
+  const city = inpAddress.value.trim().replace(/[<>{}()'"&%\-=:#?|]/gi,"");
   if (city) {
     getWeather(city);
   } else {
